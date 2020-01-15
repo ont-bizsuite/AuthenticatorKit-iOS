@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04182C5523795CFA007D5FF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04182C5423795CFA007D5FF1 /* AppDelegate.m */; };
+		04182C5823795CFA007D5FF1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04182C5723795CFA007D5FF1 /* SceneDelegate.m */; };
+		04182C5B23795CFA007D5FF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04182C5A23795CFA007D5FF1 /* ViewController.m */; };
+		04182C5E23795CFA007D5FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04182C5C23795CFA007D5FF1 /* Main.storyboard */; };
+		04182C6023795CFD007D5FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04182C5F23795CFD007D5FF1 /* Assets.xcassets */; };
+		04182C6323795CFD007D5FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04182C6123795CFD007D5FF1 /* LaunchScreen.storyboard */; };
+		04182C6623795CFD007D5FF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04182C6523795CFD007D5FF1 /* main.m */; };
+		04182C7023795CFD007D5FF1 /* AuthenticatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04182C6F23795CFD007D5FF1 /* AuthenticatorDemoTests.m */; };
+		04182C7B23795CFD007D5FF1 /* AuthenticatorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04182C7A23795CFD007D5FF1 /* AuthenticatorDemoUITests.m */; };
+		2CBF98A2D56170815743E8C9 /* Pods_AuthenticatorDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50677089CDFE984B3EFA9A92 /* Pods_AuthenticatorDemoTests.framework */; };
+		977C3ACA111480E64DB39BB7 /* Pods_AuthenticatorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA26296A0817A2A46AFAA328 /* Pods_AuthenticatorDemo.framework */; };
+		E2475B6264B750BD3FC3259F /* Pods_AuthenticatorDemo_AuthenticatorDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D0CC9D28F5D2631C513614 /* Pods_AuthenticatorDemo_AuthenticatorDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04182C6C23795CFD007D5FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04182C4823795CFA007D5FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04182C4F23795CFA007D5FF1;
+			remoteInfo = AuthenticatorDemo;
+		};
+		04182C7723795CFD007D5FF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04182C4823795CFA007D5FF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04182C4F23795CFA007D5FF1;
+			remoteInfo = AuthenticatorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04182C5023795CFA007D5FF1 /* AuthenticatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04182C5323795CFA007D5FF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04182C5423795CFA007D5FF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04182C5623795CFA007D5FF1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		04182C5723795CFA007D5FF1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		04182C5923795CFA007D5FF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04182C5A23795CFA007D5FF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04182C5D23795CFA007D5FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04182C5F23795CFD007D5FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04182C6223795CFD007D5FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04182C6423795CFD007D5FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04182C6523795CFD007D5FF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04182C6B23795CFD007D5FF1 /* AuthenticatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04182C6F23795CFD007D5FF1 /* AuthenticatorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticatorDemoTests.m; sourceTree = "<group>"; };
+		04182C7123795CFD007D5FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04182C7623795CFD007D5FF1 /* AuthenticatorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticatorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04182C7A23795CFD007D5FF1 /* AuthenticatorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticatorDemoUITests.m; sourceTree = "<group>"; };
+		04182C7C23795CFD007D5FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50677089CDFE984B3EFA9A92 /* Pods_AuthenticatorDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthenticatorDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CE6DFB5A7732937D5902EC /* Pods-AuthenticatorDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AuthenticatorDemoTests/Pods-AuthenticatorDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D9BE9E19B7673AEE9D1D4D9 /* Pods-AuthenticatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorDemo.release.xcconfig"; path = "Target Support Files/Pods-AuthenticatorDemo/Pods-AuthenticatorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7B0F9F7544E3C0C7CA516A76 /* Pods-AuthenticatorDemo-AuthenticatorDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorDemo-AuthenticatorDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AuthenticatorDemo-AuthenticatorDemoUITests/Pods-AuthenticatorDemo-AuthenticatorDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		845ED778F4284FF276E086BB /* Pods-AuthenticatorDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AuthenticatorDemoTests/Pods-AuthenticatorDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		990BFAC14CA0C056DCD4A1CA /* Pods-AuthenticatorDemo-AuthenticatorDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorDemo-AuthenticatorDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AuthenticatorDemo-AuthenticatorDemoUITests/Pods-AuthenticatorDemo-AuthenticatorDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA26296A0817A2A46AFAA328 /* Pods_AuthenticatorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthenticatorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D0CC9D28F5D2631C513614 /* Pods_AuthenticatorDemo_AuthenticatorDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthenticatorDemo_AuthenticatorDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52191C98D5FCE1F2F66BC4A /* Pods-AuthenticatorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthenticatorDemo.debug.xcconfig"; path = "Target Support Files/Pods-AuthenticatorDemo/Pods-AuthenticatorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04182C4D23795CFA007D5FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977C3ACA111480E64DB39BB7 /* Pods_AuthenticatorDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04182C6823795CFD007D5FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBF98A2D56170815743E8C9 /* Pods_AuthenticatorDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04182C7323795CFD007D5FF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2475B6264B750BD3FC3259F /* Pods_AuthenticatorDemo_AuthenticatorDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04182C4723795CFA007D5FF1 = {
+			isa = PBXGroup;
+			children = (
+				04182C5223795CFA007D5FF1 /* AuthenticatorDemo */,
+				04182C6E23795CFD007D5FF1 /* AuthenticatorDemoTests */,
+				04182C7923795CFD007D5FF1 /* AuthenticatorDemoUITests */,
+				04182C5123795CFA007D5FF1 /* Products */,
+				0F4B7472024511A3B0A6B2C8 /* Pods */,
+				20F2B1B68AF4BC1EC40A6670 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04182C5123795CFA007D5FF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04182C5023795CFA007D5FF1 /* AuthenticatorDemo.app */,
+				04182C6B23795CFD007D5FF1 /* AuthenticatorDemoTests.xctest */,
+				04182C7623795CFD007D5FF1 /* AuthenticatorDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04182C5223795CFA007D5FF1 /* AuthenticatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04182C5323795CFA007D5FF1 /* AppDelegate.h */,
+				04182C5423795CFA007D5FF1 /* AppDelegate.m */,
+				04182C5623795CFA007D5FF1 /* SceneDelegate.h */,
+				04182C5723795CFA007D5FF1 /* SceneDelegate.m */,
+				04182C5923795CFA007D5FF1 /* ViewController.h */,
+				04182C5A23795CFA007D5FF1 /* ViewController.m */,
+				04182C5C23795CFA007D5FF1 /* Main.storyboard */,
+				04182C5F23795CFD007D5FF1 /* Assets.xcassets */,
+				04182C6123795CFD007D5FF1 /* LaunchScreen.storyboard */,
+				04182C6423795CFD007D5FF1 /* Info.plist */,
+				04182C6523795CFD007D5FF1 /* main.m */,
+			);
+			path = AuthenticatorDemo;
+			sourceTree = "<group>";
+		};
+		04182C6E23795CFD007D5FF1 /* AuthenticatorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				04182C6F23795CFD007D5FF1 /* AuthenticatorDemoTests.m */,
+				04182C7123795CFD007D5FF1 /* Info.plist */,
+			);
+			path = AuthenticatorDemoTests;
+			sourceTree = "<group>";
+		};
+		04182C7923795CFD007D5FF1 /* AuthenticatorDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04182C7A23795CFD007D5FF1 /* AuthenticatorDemoUITests.m */,
+				04182C7C23795CFD007D5FF1 /* Info.plist */,
+			);
+			path = AuthenticatorDemoUITests;
+			sourceTree = "<group>";
+		};
+		0F4B7472024511A3B0A6B2C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F52191C98D5FCE1F2F66BC4A /* Pods-AuthenticatorDemo.debug.xcconfig */,
+				6D9BE9E19B7673AEE9D1D4D9 /* Pods-AuthenticatorDemo.release.xcconfig */,
+				7B0F9F7544E3C0C7CA516A76 /* Pods-AuthenticatorDemo-AuthenticatorDemoUITests.debug.xcconfig */,
+				990BFAC14CA0C056DCD4A1CA /* Pods-AuthenticatorDemo-AuthenticatorDemoUITests.release.xcconfig */,
+				52CE6DFB5A7732937D5902EC /* Pods-AuthenticatorDemoTests.debug.xcconfig */,
+				845ED778F4284FF276E086BB /* Pods-AuthenticatorDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		20F2B1B68AF4BC1EC40A6670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA26296A0817A2A46AFAA328 /* Pods_AuthenticatorDemo.framework */,
+				D0D0CC9D28F5D2631C513614 /* Pods_AuthenticatorDemo_AuthenticatorDemoUITests.framework */,
+				50677089CDFE984B3EFA9A92 /* Pods_AuthenticatorDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04182C4F23795CFA007D5FF1 /* AuthenticatorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04182C7F23795CFD007D5FF1 /* Build configuration list for PBXNativeTarget "AuthenticatorDemo" */;
+			buildPhases = (
+				28B2424203340451B3B7DD69 /* [CP] Check Pods Manifest.lock */,
+				04182C4C23795CFA007D5FF1 /* Sources */,
+				04182C4D23795CFA007D5FF1 /* Frameworks */,
+				04182C4E23795CFA007D5FF1 /* Resources */,
+				D14310BC6BB48CADB517C884 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuthenticatorDemo;
+			productName = AuthenticatorDemo;
+			productReference = 04182C5023795CFA007D5FF1 /* AuthenticatorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04182C6A23795CFD007D5FF1 /* AuthenticatorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04182C8223795CFD007D5FF1 /* Build configuration list for PBXNativeTarget "AuthenticatorDemoTests" */;
+			buildPhases = (
+				8C63698F767BBBC67545BB2D /* [CP] Check Pods Manifest.lock */,
+				04182C6723795CFD007D5FF1 /* Sources */,
+				04182C6823795CFD007D5FF1 /* Frameworks */,
+				04182C6923795CFD007D5FF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04182C6D23795CFD007D5FF1 /* PBXTargetDependency */,
+			);
+			name = AuthenticatorDemoTests;
+			productName = AuthenticatorDemoTests;
+			productReference = 04182C6B23795CFD007D5FF1 /* AuthenticatorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04182C7523795CFD007D5FF1 /* AuthenticatorDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04182C8523795CFD007D5FF1 /* Build configuration list for PBXNativeTarget "AuthenticatorDemoUITests" */;
+			buildPhases = (
+				A79D6941ABE8ACFD3C0E927A /* [CP] Check Pods Manifest.lock */,
+				04182C7223795CFD007D5FF1 /* Sources */,
+				04182C7323795CFD007D5FF1 /* Frameworks */,
+				04182C7423795CFD007D5FF1 /* Resources */,
+				871D0D0E668C4C907EA89803 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04182C7823795CFD007D5FF1 /* PBXTargetDependency */,
+			);
+			name = AuthenticatorDemoUITests;
+			productName = AuthenticatorDemoUITests;
+			productReference = 04182C7623795CFD007D5FF1 /* AuthenticatorDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04182C4823795CFA007D5FF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Onchain;
+				TargetAttributes = {
+					04182C4F23795CFA007D5FF1 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					04182C6A23795CFD007D5FF1 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 04182C4F23795CFA007D5FF1;
+					};
+					04182C7523795CFD007D5FF1 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 04182C4F23795CFA007D5FF1;
+					};
+				};
+			};
+			buildConfigurationList = 04182C4B23795CFA007D5FF1 /* Build configuration list for PBXProject "AuthenticatorDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04182C4723795CFA007D5FF1;
+			productRefGroup = 04182C5123795CFA007D5FF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04182C4F23795CFA007D5FF1 /* AuthenticatorDemo */,
+				04182C6A23795CFD007D5FF1 /* AuthenticatorDemoTests */,
+				04182C7523795CFD007D5FF1 /* AuthenticatorDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04182C4E23795CFA007D5FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04182C6323795CFD007D5FF1 /* LaunchScreen.storyboard in Resources */,
+				04182C6023795CFD007D5FF1 /* Assets.xcassets in Resources */,
+				04182C5E23795CFA007D5FF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04182C6923795CFD007D5FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04182C7423795CFD007D5FF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28B2424203340451B3B7DD69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthenticatorDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		871D0D0E668C4C907EA89803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthenticatorDemo-AuthenticatorDemoUITests/Pods-AuthenticatorDemo-AuthenticatorDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthenticatorDemo-AuthenticatorDemoUITests/Pods-AuthenticatorDemo-AuthenticatorDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthenticatorDemo-AuthenticatorDemoUITests/Pods-AuthenticatorDemo-AuthenticatorDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C63698F767BBBC67545BB2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthenticatorDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A79D6941ABE8ACFD3C0E927A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthenticatorDemo-AuthenticatorDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D14310BC6BB48CADB517C884 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthenticatorDemo/Pods-AuthenticatorDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthenticatorDemo/Pods-AuthenticatorDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthenticatorDemo/Pods-AuthenticatorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04182C4C23795CFA007D5FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04182C5B23795CFA007D5FF1 /* ViewController.m in Sources */,
+				04182C5523795CFA007D5FF1 /* AppDelegate.m in Sources */,
+				04182C6623795CFD007D5FF1 /* main.m in Sources */,
+				04182C5823795CFA007D5FF1 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04182C6723795CFD007D5FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04182C7023795CFD007D5FF1 /* AuthenticatorDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04182C7223795CFD007D5FF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04182C7B23795CFD007D5FF1 /* AuthenticatorDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04182C6D23795CFD007D5FF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04182C4F23795CFA007D5FF1 /* AuthenticatorDemo */;
+			targetProxy = 04182C6C23795CFD007D5FF1 /* PBXContainerItemProxy */;
+		};
+		04182C7823795CFD007D5FF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04182C4F23795CFA007D5FF1 /* AuthenticatorDemo */;
+			targetProxy = 04182C7723795CFD007D5FF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04182C5C23795CFA007D5FF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04182C5D23795CFA007D5FF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04182C6123795CFD007D5FF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04182C6223795CFD007D5FF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04182C7D23795CFD007D5FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04182C7E23795CFD007D5FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04182C8023795CFD007D5FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52191C98D5FCE1F2F66BC4A /* Pods-AuthenticatorDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29B4VVVVKM;
+				INFOPLIST_FILE = AuthenticatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onchain.AuthenticatorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04182C8123795CFD007D5FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9BE9E19B7673AEE9D1D4D9 /* Pods-AuthenticatorDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29B4VVVVKM;
+				INFOPLIST_FILE = AuthenticatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onchain.AuthenticatorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04182C8323795CFD007D5FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52CE6DFB5A7732937D5902EC /* Pods-AuthenticatorDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29B4VVVVKM;
+				INFOPLIST_FILE = AuthenticatorDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onchain.AuthenticatorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AuthenticatorDemo.app/AuthenticatorDemo";
+			};
+			name = Debug;
+		};
+		04182C8423795CFD007D5FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845ED778F4284FF276E086BB /* Pods-AuthenticatorDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29B4VVVVKM;
+				INFOPLIST_FILE = AuthenticatorDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onchain.AuthenticatorDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AuthenticatorDemo.app/AuthenticatorDemo";
+			};
+			name = Release;
+		};
+		04182C8623795CFD007D5FF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0F9F7544E3C0C7CA516A76 /* Pods-AuthenticatorDemo-AuthenticatorDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29B4VVVVKM;
+				INFOPLIST_FILE = AuthenticatorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onchain.AuthenticatorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AuthenticatorDemo;
+			};
+			name = Debug;
+		};
+		04182C8723795CFD007D5FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 990BFAC14CA0C056DCD4A1CA /* Pods-AuthenticatorDemo-AuthenticatorDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29B4VVVVKM;
+				INFOPLIST_FILE = AuthenticatorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.onchain.AuthenticatorDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AuthenticatorDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04182C4B23795CFA007D5FF1 /* Build configuration list for PBXProject "AuthenticatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04182C7D23795CFD007D5FF1 /* Debug */,
+				04182C7E23795CFD007D5FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04182C7F23795CFD007D5FF1 /* Build configuration list for PBXNativeTarget "AuthenticatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04182C8023795CFD007D5FF1 /* Debug */,
+				04182C8123795CFD007D5FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04182C8223795CFD007D5FF1 /* Build configuration list for PBXNativeTarget "AuthenticatorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04182C8323795CFD007D5FF1 /* Debug */,
+				04182C8423795CFD007D5FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04182C8523795CFD007D5FF1 /* Build configuration list for PBXNativeTarget "AuthenticatorDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04182C8623795CFD007D5FF1 /* Debug */,
+				04182C8723795CFD007D5FF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04182C4823795CFA007D5FF1 /* Project object */;
+}
