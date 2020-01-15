@@ -14,11 +14,11 @@ And run `pod install`.
 
 Add a URL Schemes in your project targets.
 
-![image](https://github.com/AlleniCode/AuthenticatorKit/blob/master/Resources/QQ20200111-141537%402x.png)
+![image](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/blob/master/Resources/QQ20200111-141537%402x.png)
 
 And add a key of  `LSApplicationQueriesSchemes` with value `ontologyauthenticator` in your Info.plist file.
 
-![image](https://github.com/AlleniCode/AuthenticatorKit/blob/master/Resources/QQ20200111-141723%402x.png)
+![image](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/blob/master/Resources/QQ20200111-141723%402x.png)
 
 
 #### Step 3
@@ -36,7 +36,7 @@ And add some code in the `application:didFinishLaunchingWithOptions` func:
 }
 ```
 
-![image](https://github.com/AlleniCode/AuthenticatorKit/blob/master/Resources/QQ20200111-142345%402x.png)
+![image](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/blob/master/Resources/QQ20200111-142345%402x.png)
 
 
 #### Step 4
@@ -50,7 +50,7 @@ Add some cod in `AppDelegate.m` and `SceneDelegate.m`:
 }
 ```
 
-![image](https://github.com/AlleniCode/AuthenticatorKit/blob/master/Resources/QQ20200111-142743%402x.png)
+![image](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/blob/master/Resources/QQ20200111-142743%402x.png)
 
 ```
 - (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
@@ -59,7 +59,7 @@ Add some cod in `AppDelegate.m` and `SceneDelegate.m`:
     [[AuthenticatorKit shareInstance] handelURL:url];
 }
 ```
-![image](https://github.com/AlleniCode/AuthenticatorKit/blob/master/Resources/QQ20200111-142814%402x.png)
+![image](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/blob/master/Resources/QQ20200111-142814%402x.png)
 
 
 #### Step 5
@@ -76,12 +76,14 @@ Set the `AuthenticatorKitDelegate` where you want, and add the func `receiveResu
 }
 ```
 
-![image](https://github.com/AlleniCode/AuthenticatorKit/blob/master/Resources/QQ20200111-143020%402x.png)
+![image](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/blob/master/Resources/QQ20200111-143020%402x.png)
 
 
 ## Examples
 
-See more usage in the example project of `AuthenticatorKitDemo`.
+See more usage in the example project of `AuthenticatorKitDemo` or `AuthenticatorDemo`.
 
-[AuthenticatorKitDemo](https://github.com/AlleniCode/AuthenticatorKit/tree/master/AuthenticatorKitDemo)
+[AuthenticatorKitDemo](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/tree/master/AuthenticatorKitDemo)
+
+[AuthenticatorDemo](https://github.com/ont-bizsuite/AuthenticatorKit-iOS/tree/master/AuthenticatorDemo)
 
