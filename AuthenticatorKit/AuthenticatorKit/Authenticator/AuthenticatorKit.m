@@ -132,10 +132,15 @@ typedef NS_OPTIONS(NSUInteger, RequestType) {
         if (!error) {
             if ([data isKindOfClass:[NSDictionary class]]) {
                 NSDictionary *result = (NSDictionary *)data;
-                NSDictionary *qrCode = result[@"result"][@"qrcode"];
-                [AuthenticatorKit openAuthenticatorWithType:ActionTypeDecentralizedRegister qrCode:qrCode callback:^(BOOL success, NSError *error) {
-                    callback(success, error);
-                }];
+                NSNumber *errorCode = result[@"error"];
+                if ([errorCode isEqualToNumber:@(0)]) {
+                    NSDictionary *qrCode = result[@"result"][@"qrcode"];
+                    [AuthenticatorKit openAuthenticatorWithType:ActionTypeDecentralizedRegister qrCode:qrCode callback:^(BOOL success, NSError *error) {
+                        callback(success, error);
+                    }];
+                } else {
+                    callback(NO, [NSError errorWithDomain:@"AuthenticatorError" code:errorCode.integerValue userInfo:@{@"error": result[@"desc"]}]);
+                }
             } else {
                 callback(NO, nil);
             }
@@ -184,7 +189,10 @@ typedef NS_OPTIONS(NSUInteger, RequestType) {
 
 /// Apply Claim
 - (void)applyClaimWithOntid:(NSString *)ontid name:(NSString *)name age:(NSInteger)age callback:(void (^)(BOOL success, NSError *error))callback {
-    NSString *url = @"http://18.141.44.15:7879/api/v1/ta/claim";
+    NSString *url = @"http://a582b9d85545d11ea83090a4ed185dbd-1776841739.ap-southeast-1.elb.amazonaws.com/api/v1/ta/claim";
+    if (self.chainType == ChainTypeMinnet) {
+        url = @"http://ab15c7ad068cf11ea83090a4ed185dbd-2108585050.ap-southeast-1.elb.amazonaws.com/api/v1/ta/claim";
+    }
     NSDictionary *params = @{@"name": name,
                              @"age": @(age),
                              @"answer": @(YES),
@@ -212,7 +220,10 @@ typedef NS_OPTIONS(NSUInteger, RequestType) {
 
 /// Get Claim
 - (void)getClaimCallback:(void (^)(BOOL success, NSError *error))callback {
-    NSString *url = @"http://18.141.44.15:7879/api/v1/ta/claim";
+    NSString *url = @"http://af29d9334547511ea83090a4ed185dbd-409670239.ap-southeast-1.elb.amazonaws.com/api/v1/ta/claim";
+    if (self.chainType == ChainTypeMinnet) {
+        url = @"http://ab15c7ad068cf11ea83090a4ed185dbd-2108585050.ap-southeast-1.elb.amazonaws.com/api/v1/ta/claim";
+    }
     
     [AuthenticatorKit requestWithType:RequestTypeGET URLString:url headers:@{} parameters:@{} result:^(id data, NSError *error) {
         if (!error) {
@@ -233,7 +244,10 @@ typedef NS_OPTIONS(NSUInteger, RequestType) {
 
 /// Authorize Claim
 - (void)authorizeClaimCallback:(void (^)(BOOL success, NSError *error))callback {
-    NSString *url = @"http://18.141.44.15:7878/api/v1/app/claim";
+    NSString *url = @"http://a643f523b53c911ea83090a4ed185dbd-377407160.ap-southeast-1.elb.amazonaws.com/api/v1/app/claim";
+    if (self.chainType == ChainTypeMinnet) {
+        url = @"http://accd4175468c511ea83090a4ed185dbd-2033831047.ap-southeast-1.elb.amazonaws.com/api/v1/app/claim";
+    }
     
     [AuthenticatorKit requestWithType:RequestTypePOST URLString:url headers:@{} parameters:@{} result:^(id data, NSError *error) {
         if (!error) {
@@ -255,6 +269,10 @@ typedef NS_OPTIONS(NSUInteger, RequestType) {
 /// Centralized registration
 - (void)centralizedRegisterWithUserName:(NSString *)userName password:(NSString *)password callback:(void (^)(BOOL success, NSString *ontid, NSError *error))callback {
     NSString *url = @"http://18.141.44.15:7878/api/v2/app/register";
+    NSString *url = @"http://af29d9334547511ea83090a4ed185dbd-409670239.ap-southeast-1.elb.amazonaws.com/api/v2/app/register";
+    if (self.chainType == ChainTypeMinnet) {
+        url = @"http://a6023cfb268cc11ea83090a4ed185dbd-1789578237.ap-southeast-1.elb.amazonaws.com/api/v2/ta/claim";
+    }
     NSDictionary *params = @{@"userName": userName,
                              @"password": password
     };

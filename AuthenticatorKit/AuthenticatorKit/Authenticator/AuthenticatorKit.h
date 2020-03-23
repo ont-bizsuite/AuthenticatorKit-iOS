@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, ChainType) {
+    ChainTypeTestnet = 0,
+    ChainTypeMinnet  = 1,
+};
+
 typedef NS_ENUM(NSUInteger, ActionType) {
     ActionTypeDecentralizedRegister         = 0, // Decentralized registration（去中心化的注册【需要调起 ONTAuth】）
     ActionTypeDecentralizedLogin            = 1, // Decentralized login（去中心化的登录【需要调起 ONTAuth】）
@@ -33,6 +38,7 @@ typedef NS_ENUM(NSUInteger, ActionType) {
 
 @property (nonatomic, weak) id<AuthenticatorKitDelegate> delegate;
 @property (nonatomic, strong) NSString *urlSchemes;
+@property (nonatomic, assign) ChainType chainType;
 
 
 + (instancetype)shareInstance;

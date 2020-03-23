@@ -285,9 +285,24 @@ typedef NS_ENUM(NSUInteger, ActionType) {
             break;
         }
         case ActionTypeAuthorizeClaim: {
-            [self getAuthorizeClaimDataCallback:^(NSDictionary *qrcode, NSError *error) {
-                callback(qrcode, error);
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Username" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            __weak typeof(alertController) weakAlert = alertController;
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                
             }];
+            UIAlertAction *doneAction = [UIAlertAction actionWithTitle:@"Confirm" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                NSString *userName = weakAlert.textFields.firstObject.text;
+                NSLog(@"%@", userName);
+                [self getAuthorizeClaimDataWithUserName:userName callback:^(NSDictionary *qrcode, NSError *error) {
+                    callback(qrcode, error);
+                }];
+            }];
+            [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                textField.placeholder = @"Enter username";
+            }];
+            [alertController addAction:cancelAction];
+            [alertController addAction:doneAction];
+            [self presentViewController:alertController animated:YES completion:nil];
             break;
         }
         case ActionTypeCentralizedRegister: {
@@ -364,14 +379,19 @@ typedef NS_ENUM(NSUInteger, ActionType) {
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    [manager POST:@"https://prod.microservice.ont.io/addon-server/api/v1/account/register" parameters:@{@"userName": @"My username"} progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager POST:@"https://prod.microservice.ont.io/addon-server/api/v1/account/register" parameters:@{@"userName": @"My username 1"} progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@", responseObject);
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
             NSDictionary *result = (NSDictionary *)responseObject;
-            NSDictionary *qrCode = result[@"result"][@"qrcode"];
-            callback(qrCode, nil);
+            NSNumber *errorCode = result[@"error"];
+            if ([errorCode isEqualToNumber:@(0)]) {
+                NSDictionary *qrCode = result[@"result"][@"qrcode"];
+                callback(qrCode, nil);
+            } else {
+                callback(nil, [NSError errorWithDomain:@"AuthenticatorError" code:errorCode.integerValue userInfo:@{@"error": result[@"desc"]}]);
+            }
         } else {
             callback(nil, nil);
         }
@@ -450,7 +470,7 @@ typedef NS_ENUM(NSUInteger, ActionType) {
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    [manager POST:@"http://18.141.44.15:7879/api/v1/ta/claim" parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager POST:@"http://a582b9d85545d11ea83090a4ed185dbd-1776841739.ap-southeast-1.elb.amazonaws.com/api/v1/ta/claim" parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@", responseObject);
@@ -469,7 +489,7 @@ typedef NS_ENUM(NSUInteger, ActionType) {
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    [manager GET:@"http://18.141.44.15:7879/api/v1/ta/claim" parameters:@{} progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager GET:@"http://a582b9d85545d11ea83090a4ed185dbd-1776841739.ap-southeast-1.elb.amazonaws.com/api/v1/ta/claim" parameters:@{} progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@", responseObject);
@@ -487,7 +507,7 @@ typedef NS_ENUM(NSUInteger, ActionType) {
 }
 
 /// 授权 Claim
-- (void)getAuthorizeClaimDataCallback:(void (^)(NSDictionary *qrcode, NSError *error))callback {
+- (void)getAuthorizeClaimDataWithUserName:(NSString *)userName callback:(void (^)(NSDictionary *qrcode, NSError *error))callback {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.securityPolicy.allowInvalidCertificates = YES;
     manager.securityPolicy.validatesDomainName = NO;
@@ -495,7 +515,7 @@ typedef NS_ENUM(NSUInteger, ActionType) {
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    [manager POST:@"http://18.141.44.15:7878/api/v1/app/claim" parameters:@{} progress:^(NSProgress * _Nonnull uploadProgress) {
+    [manager POST:@"http://a643f523b53c911ea83090a4ed185dbd-377407160.ap-southeast-1.elb.amazonaws.com/api/v1/app/claim" parameters:@{@"userName": userName} progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"%@", responseObject);
